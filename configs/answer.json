@@ -1,0 +1,36 @@
+{
+  "train": {
+    "train": "data/train_aug.jsonl",
+    "val": "data/val.jsonl",
+    "out": "outputs/answer",
+    "base": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "target": "answer",
+    "epochs": 3,
+    "lr": 0.0001,
+    "accum": 16,
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "warmup_ratio": 0.03,
+    "save_steps": 25,
+    "log_steps": 10,
+    "val_max_new_tokens": 192,
+    "seed": 1,
+    "workers": 8,
+    "attn": "sdpa",
+    "vit_varlen": true
+  },
+  "eval": {
+    "split": "data/test.jsonl",
+    "out": "outputs/eval/answer_cyclic4.jsonl",
+    "tag": "answer-s1-best",
+    "base": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "adapter": "outputs/answer/best",
+    "attn": "sdpa",
+    "max_new_tokens": 16384,
+    "forced_choice": true,
+    "views": "cyclic4",
+    "gen_views": "all",
+    "vit_varlen": true
+  }
+}

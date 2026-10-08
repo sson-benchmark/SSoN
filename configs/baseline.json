@@ -1,0 +1,14 @@
+{
+  "eval": {
+    "split": "data/test.jsonl",
+    "out": "outputs/eval/base_cyclic4.jsonl",
+    "tag": "base-qwen25vl7b",
+    "base": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "attn": "sdpa",
+    "max_new_tokens": 16384,
+    "forced_choice": true,
+    "views": "cyclic4",
+    "gen_views": "canonical",
+    "vit_varlen": false
+  }
+}

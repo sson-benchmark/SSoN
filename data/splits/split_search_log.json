@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "min_train_per_dataset": 30,
+    "min_val_per_dataset": 8,
+    "min_test_per_dataset": 12,
+    "min_cell_items": 10,
+    "min_test_per_cell": 1,
+    "min_train_per_cell": 3,
+    "min_test_per_tier": 5,
+    "min_train_per_tier": 30,
+    "test_n_range": [
+      180,
+      220
+    ],
+    "val_n_range": [
+      80,
+      120
+    ],
+    "max_dataset_shift": 0.06,
+    "max_tier_shift": 0.08
+  },
+  "seeds_tried": [
+    {
+      "seed": 0,
+      "n": [
+        700,
+        100,
+        200
+      ],
+      "accepted": false,
+      "violations": [
+        "test has no sage|rotate"
+      ]
+    },
+    {
+      "seed": 1,
+      "n": [
+        699,
+        100,
+        201
+      ],
+      "accepted": false,
+      "violations": [
+        "test has no sage|rotate"
+      ]
+    },
+    {
+      "seed": 2,
+      "n": [
+        700,
+        99,
+        201
+      ],
+      "accepted": true,
+      "violations": []
+    }
+  ]
+}

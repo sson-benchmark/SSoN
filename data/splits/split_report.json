@@ -1,0 +1,140 @@
+{
+  "accepted_seed": 2,
+  "aug_seed": 0,
+  "criteria": {
+    "min_train_per_dataset": 30,
+    "min_val_per_dataset": 8,
+    "min_test_per_dataset": 12,
+    "min_cell_items": 10,
+    "min_test_per_cell": 1,
+    "min_train_per_cell": 3,
+    "min_test_per_tier": 5,
+    "min_train_per_tier": 30,
+    "test_n_range": [
+      180,
+      220
+    ],
+    "val_n_range": [
+      80,
+      120
+    ],
+    "max_dataset_shift": 0.06,
+    "max_tier_shift": 0.08
+  },
+  "seeds_rejected": [
+    0,
+    1
+  ],
+  "holdout_dataset": null,
+  "n_groups": 359,
+  "counts": {
+    "train": 700,
+    "val": 99,
+    "test": 201,
+    "train_aug": 2800,
+    "train_perm24": 24
+  },
+  "per_dataset": {
+    "train": {
+      "3dfront": 71,
+      "infinigen": 115,
+      "ithor_procthor": 264,
+      "robothor": 75,
+      "sage": 73,
+      "tdw": 102
+    },
+    "val": {
+      "3dfront": 12,
+      "infinigen": 15,
+      "ithor_procthor": 38,
+      "robothor": 10,
+      "sage": 10,
+      "tdw": 14
+    },
+    "test": {
+      "3dfront": 19,
+      "infinigen": 30,
+      "ithor_procthor": 81,
+      "robothor": 22,
+      "sage": 18,
+      "tdw": 31
+    }
+  },
+  "per_tier": {
+    "train": {
+      "delete": 70,
+      "detail": 71,
+      "mirror": 70,
+      "move": 172,
+      "rotate": 248,
+      "swap": 69
+    },
+    "val": {
+      "delete": 9,
+      "detail": 10,
+      "mirror": 11,
+      "move": 27,
+      "rotate": 31,
+      "swap": 11
+    },
+    "test": {
+      "delete": 22,
+      "detail": 20,
+      "mirror": 20,
+      "move": 51,
+      "rotate": 67,
+      "swap": 21
+    }
+  },
+  "per_letter": {
+    "train": {
+      "A": 164,
+      "B": 193,
+      "C": 164,
+      "D": 179
+    },
+    "val": {
+      "A": 24,
+      "B": 19,
+      "C": 31,
+      "D": 25
+    },
+    "test": {
+      "A": 45,
+      "B": 59,
+      "C": 52,
+      "D": 45
+    },
+    "train_aug": {
+      "A": 700,
+      "B": 700,
+      "C": 700,
+      "D": 700
+    },
+    "train_perm24": {
+      "A": 6,
+      "B": 6,
+      "C": 6,
+      "D": 6
+    }
+  },
+  "shift_train_minus_test": {
+    "dataset": {
+      "3dfront": 0.0069,
+      "infinigen": 0.015,
+      "ithor_procthor": -0.0258,
+      "robothor": -0.0023,
+      "sage": 0.0147,
+      "tdw": -0.0085
+    },
+    "tier": {
+      "delete": -0.0095,
+      "detail": 0.0019,
+      "mirror": 0.0005,
+      "move": -0.008,
+      "rotate": 0.021,
+      "swap": -0.0059
+    }
+  },
+  "test_majority_letter_baseline": 0.2935
+}

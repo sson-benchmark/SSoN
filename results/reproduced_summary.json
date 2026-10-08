@@ -1,0 +1,130 @@
+{
+  "test_items": 201,
+  "runs": {
+    "Base": {
+      "correct": 44,
+      "total": 201,
+      "accuracy": 0.21890547263681592,
+      "wilson_95": [
+        0.1673048094216242,
+        0.28104943112326514
+      ],
+      "by_tier": {
+        "move": {
+          "correct": 12,
+          "total": 51
+        },
+        "rotate": {
+          "correct": 16,
+          "total": 67
+        },
+        "mirror": {
+          "correct": 5,
+          "total": 20
+        },
+        "swap": {
+          "correct": 3,
+          "total": 21
+        },
+        "delete": {
+          "correct": 4,
+          "total": 22
+        },
+        "detail": {
+          "correct": 4,
+          "total": 20
+        }
+      },
+      "source_sha256": "78335b190ea5d8978beb0fb49f3e5871d74099495030123e4bfa09de1dba16cf"
+    },
+    "Answer SFT": {
+      "correct": 67,
+      "total": 201,
+      "accuracy": 0.3333333333333333,
+      "wilson_95": [
+        0.2718267636808745,
+        0.40109123735016605
+      ],
+      "by_tier": {
+        "move": {
+          "correct": 16,
+          "total": 51
+        },
+        "rotate": {
+          "correct": 22,
+          "total": 67
+        },
+        "mirror": {
+          "correct": 6,
+          "total": 20
+        },
+        "swap": {
+          "correct": 10,
+          "total": 21
+        },
+        "delete": {
+          "correct": 10,
+          "total": 22
+        },
+        "detail": {
+          "correct": 3,
+          "total": 20
+        }
+      },
+      "source_sha256": "0d75346dc2164f7c806d4ffcfed2c6c7e021ba5d0526876318e3e8ded5c48cc4",
+      "cyclic4_accuracy": 0.35323383084577115,
+      "cyclic4_item_bootstrap_95": [
+        0.31467661691542287,
+        0.38930348258706465
+      ],
+      "all_four_correct": 6
+    },
+    "Rationale and answer SFT": {
+      "correct": 84,
+      "total": 201,
+      "accuracy": 0.417910447761194,
+      "wilson_95": [
+        0.3518889211594377,
+        0.48701098979614943
+      ],
+      "by_tier": {
+        "move": {
+          "correct": 16,
+          "total": 51
+        },
+        "rotate": {
+          "correct": 39,
+          "total": 67
+        },
+        "mirror": {
+          "correct": 7,
+          "total": 20
+        },
+        "swap": {
+          "correct": 8,
+          "total": 21
+        },
+        "delete": {
+          "correct": 11,
+          "total": 22
+        },
+        "detail": {
+          "correct": 3,
+          "total": 20
+        }
+      },
+      "source_sha256": "bdb4d40edecba4e6665cde078947119bec15bcad72d20f004ec437c1d38a7f2a",
+      "cyclic4_accuracy": 0.38930348258706465,
+      "cyclic4_item_bootstrap_95": [
+        0.34701492537313433,
+        0.43283582089552236
+      ],
+      "all_four_correct": 24
+    }
+  },
+  "answer_vs_rationale": {
+    "answer_only_correct": 29,
+    "rationale_only_correct": 46,
+    "mcnemar_exact_p": 0.06394991646706695
+  }
+}

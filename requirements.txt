@@ -1,0 +1,9 @@
+# versions used for the reported runs
+torch==2.14.0          # >= 2.10 for torch.nn.attention.varlen (--vit-varlen)
+transformers==5.17.0
+peft==0.21.0
+accelerate
+pillow>=10
+numpy
+scikit-learn           # prepare_data.py (StratifiedGroupKFold)
+matplotlib             # make_figures.py only

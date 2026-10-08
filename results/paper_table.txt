@@ -1,0 +1,11 @@
+split data/test.jsonl   n=201 items   views: canonical only (original A-D order)   chance = 25.00
+  Qwen2.5-VL-7B    runs/baseline/base_q257b.jsonl   (201 items scored)
+  +SFT answer      runs/ans-s1/ans-s1-best_cyc4.jsonl   (201 items scored)
+  +SFT rationale   runs/rat-s1/rat-s1-best_cyc4.jsonl   (201 items scored)
+
+Protocol separate_v1: generative strict, original A-D order  (HEADLINE)
+Model                 Overall    move (51)  rotate (67)  mirror (20)    swap (21)  delete (22)  detail (20)   95% CI (overall, by item)
+---------------------------------------------------------------------------------------------------------------------------------------
+Qwen2.5-VL-7B           21.89        23.53        23.88        25.00        14.29        18.18        20.00   [16.7, 28.1]
++SFT answer             33.33        31.37        32.84        30.00        47.62        45.45        15.00   [27.2, 40.1]
++SFT rationale          41.79        31.37        58.21        35.00        38.10        50.00        15.00   [35.2, 48.7]
